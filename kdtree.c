@@ -275,9 +275,9 @@ static int find_nearest(struct kdnode *node, const double *pos, double range, st
 			return -1;
 		}
 		added_res = 1;
-  }
+	}
 
-  dx = pos[node->dir] - node->pos[node->dir];
+	dx = pos[node->dir] - node->pos[node->dir];
 
 	ret = find_nearest(dx <= 0.0 ? node->left : node->right, pos, range, list, ordered, dim);
 	if(ret >= 0 && fabs(dx) < range) {

@@ -112,4 +112,4 @@ void *kd_res_item_data(struct kdres *set);
 }
 #endif
 
-#endif   /* _KDTREE_H_ */
+#endif	/* _KDTREE_H_ */
